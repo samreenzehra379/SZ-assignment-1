@@ -13,45 +13,60 @@ body{
 
 /* ===== Navbar / Header ===== */
 .navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 40px;
-  background:#111;
-  color:white;
-  flex-wrap:wrap;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:black;
+padding:15px 30px;
+color:white;
 }
 
 .logo{
-  font-size:26px;
-  font-weight:bold;
-  color:#ff9800;
-  letter-spacing:2px;
+color:orange;
+font-size:24px;
 }
 
-.logo span{
-  color:#fff;
-  font-size:28px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
 }
 
-.menu{
-  list-style:none;
-  display:flex;
-  gap:25px;
-  flex-wrap:wrap;
+.nav-links a{
+color:white;
+text-decoration:none;
 }
 
-.menu a{
-  color:white;
-  text-decoration:none;
-  transition:0.3s;
+.menu-toggle{
+display:none;
+font-size:22px;
+cursor:pointer;
 }
 
-.menu a:hover{
-  color:#ff9800;
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+flex-direction:column;
+background:black;
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+text-align:center;
 }
 
+.nav-links.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+}
 /* ===== Hero Section ===== */
 .hero{
   text-align:center;
@@ -61,17 +76,21 @@ body{
   url("https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800") center/cover no-repeat;
   color:white;
 }
+.hero h1{
+font-size:50px;
+}
+
+@media(max-width:768px){
 
 .hero h1{
-  font-size:48px;
-  margin-bottom:15px;
+font-size:30px;
 }
 
 .hero p{
-  margin-bottom:25px;
-  font-size:18px;
+font-size:16px;
 }
 
+}
 .hero button{
   padding:14px 28px;
   border:none;
