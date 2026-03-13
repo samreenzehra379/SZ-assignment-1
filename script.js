@@ -3,6 +3,12 @@ const bookBtn = document.getElementById("bookBtn");
 bookBtn.addEventListener("click", () => {
   alert("Booking request received! We will contact you soon.");
 });
+const toggle=document.getElementById("menuToggle");
+const nav=document.getElementById("navLinks");
+
+toggle.addEventListener("click",()=>{
+nav.classList.toggle("active");
+});
 
 // PHOTO CATEGORIES ARRAY
 const categories = [
