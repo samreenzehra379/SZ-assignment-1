@@ -1,0 +1,11 @@
+What is React?
+
+A:React is a JavaScript library that is used to build user interfaces for websites and web applications. It helps developers create fast and interactive web pages.
+
+Why is JavaScript important for React?
+
+A:JavaScript is important for React because React is based on JavaScript and uses it to create dynamic and interactive web pages.
+
+What is a component?
+
+A:A component is a small reusable part of a user interface in React, such as a header, button, or form.
